@@ -7,3 +7,9 @@
 [submodule "KiloSort2"]
 	path = kilosort
 	url = https://github.com/MouseLand/Kilosort2.git
+[submodule "BuzCode"]
+	path = buzcode
+	url = https://github.com/buzsakilab/buzcode.git
+[submodule "Phy"]
+	path = phy
+	url = https://github.com/cortex-lab/phy.git
