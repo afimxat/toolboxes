@@ -4,3 +4,6 @@
 [submodule "ShadedErrorBar"]
 	path = ShadedErrorBar
 	url = https://github.com/raacampbell/shadedErrorBar.git
+[submodule "KiloSort2"]
+	path = kilosort
+	url = https://github.com/MouseLand/Kilosort2.git
