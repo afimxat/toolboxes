@@ -16,3 +16,9 @@
 [submodule "Kilosort2"]
 	path = Kilosort2
 	url = https://github.com/MouseLand/Kilosort2.git
+[submodule "buzcode"]
+	path = buzcode
+	url = https://github.com/buzsakilab/buzcode.git
+[submodule "phy"]
+	path = phy
+	url = https://github.com/cortex-lab/phy.git
