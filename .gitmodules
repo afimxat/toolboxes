@@ -22,3 +22,6 @@
 [submodule "phy"]
 	path = phy
 	url = https://github.com/cortex-lab/phy.git
+[submodule "open-ephys"]
+	path = open-ephys
+	url = https://github.com/open-ephys/analysis-tools.git
