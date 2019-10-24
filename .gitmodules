@@ -13,3 +13,6 @@
 [submodule "Phy"]
 	path = phy
 	url = https://github.com/cortex-lab/phy.git
+[submodule "Kilosort2"]
+	path = Kilosort2
+	url = https://github.com/MouseLand/Kilosort2.git
