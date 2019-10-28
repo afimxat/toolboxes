@@ -25,3 +25,6 @@
 [submodule "open-ephys"]
 	path = open-ephys
 	url = https://github.com/open-ephys/analysis-tools.git
+[submodule "ironclust"]
+	path = ironclust
+	url = https://github.com/flatironinstitute/ironclust.git
