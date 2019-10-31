@@ -61,9 +61,9 @@ classdef Singleton < handle
       %   obj = reference to the singleton instance of the subclass
       % Output:
       %   singletonData = internal data store for Singleton object
-      function singletonData = getSingletonData(obj)
-         singletonData = obj.singletonData;
-      end
+%       function singletonData = getSingletonData(obj)
+%          singletonData = obj.singletonData;
+%       end
       
       % Accessor method for modifying the singleton data.
       % Input:
@@ -71,9 +71,9 @@ classdef Singleton < handle
       %   singletonData = new data to set internal data store
       % Output:
       %   <none>
-      function setSingletonData(obj, singletonData)
-         obj.singletonData = singletonData;
-      end
+%       function setSingletonData(obj, singletonData)
+%          obj.singletonData = singletonData;
+%       end
       
    end
 
