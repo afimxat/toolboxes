@@ -28,3 +28,6 @@
 [submodule "ironclust"]
 	path = ironclust
 	url = https://github.com/flatironinstitute/ironclust.git
+[submodule "ndmanager-plugins"]
+	path = ndmanager-plugins
+	url = https://github.com/neurosuite/ndmanager-plugins.git
