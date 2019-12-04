@@ -31,3 +31,6 @@
 [submodule "ndmanager-plugins"]
 	path = ndmanager-plugins
 	url = https://github.com/neurosuite/ndmanager-plugins.git
+[submodule "masmanidis"]
+	path = masmanidis
+	url = https://github.com/sotmasman/Silicon-microprobes.git
