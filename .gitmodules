@@ -34,3 +34,6 @@
 [submodule "masmanidis"]
 	path = masmanidis
 	url = https://github.com/sotmasman/Silicon-microprobes.git
+[submodule "matlab-schemer"]
+	path = matlab-schemer
+	url = https://github.com/scottclowe/matlab-schemer.git
