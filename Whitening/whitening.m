@@ -69,6 +69,7 @@ W = hann(L);
 % while keeping everything reasonably smooth; this greatly diminishes
 % spectral leakage
 xf = fft(W.*x,L); 
+xf = fft(x,L); 
 
 % Magnitude vector   
 mag = abs(xf); 
@@ -83,6 +84,6 @@ f = (0:L-1)*(Fs/L);
 [~,index(1)] = min(abs(f-freq(1))); 
 [~,index(2)] = min(abs(f-freq(2))); 
 
-mag(index(1):index(2)) = 1.0;
+mag(index(1):index(2)) = 1;
 xnew = ifft((mag.*exp(1i*phase)),L,'symmetric');
 return

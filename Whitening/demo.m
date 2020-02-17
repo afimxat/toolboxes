@@ -1,4 +1,4 @@
-clear; clc; close all;
+clc; close all;
 % Load input signal
 data = load('NP.1875.01.HNE.dat');
 % Samplig rate, Fs, as samples-per-second
