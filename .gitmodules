@@ -16,9 +16,6 @@
 [submodule "Kilosort2"]
 	path = Kilosort2
 	url = https://github.com/MouseLand/Kilosort2.git
-[submodule "buzcode"]
-	path = buzcode
-	url = https://github.com/buzsakilab/buzcode.git
 [submodule "phy"]
 	path = phy
 	url = https://github.com/cortex-lab/phy.git
@@ -37,3 +34,9 @@
 [submodule "matlab-schemer"]
 	path = matlab-schemer
 	url = https://github.com/scottclowe/matlab-schemer.git
+[submodule "buzcode2"]
+	path = buzcode2
+	url = https://github.com/buzsakilab/buzcode.git
+[submodule "buzcode"]
+	path = buzcode
+	url = https://github.com/buzsakilab/buzcode.git
