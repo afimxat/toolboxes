@@ -40,3 +40,6 @@
 [submodule "buzcode"]
 	path = buzcode
 	url = https://github.com/buzsakilab/buzcode.git
+[submodule "readfile"]
+	path = readfile
+	url = https://github.com/thrynae/readfile.git
