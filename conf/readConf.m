@@ -16,12 +16,12 @@ while ~feof(fid)
     if isempty(line) || all(isspace(line)) || strncmp(line,'#',1) || strncmp(line,';',1) || strncmp(line,'%',1),
 	; % no operation 
     else 
-	[var,tok] = strtok(line,' \t=');
+	[var,tok] = strtok(line,{' ',':','=',char(9)});
 	var = lower(var); 
 	if any(tok==','),
 		k = 1; 
 		while (1)
-			[val, tok]=strtok(tok,',');
+			[val, tok]=strtok(tok,{',',':','=',char(9)});
 			configuration.(var){k} = strtrim(val);  	% return value of function 
 			eval(sprintf('%s{%i}=''%s'';',var,k,strtrim(val)));  % stores variable in local workspace
 		if isempty(tok), break; end;
