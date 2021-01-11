@@ -43,3 +43,6 @@
 [submodule "readfile"]
 	path = readfile
 	url = https://github.com/thrynae/readfile.git
+[submodule "NPMK"]
+	path = NPMK
+	url = https://github.com/BlackrockMicrosystems/NPMK.git
