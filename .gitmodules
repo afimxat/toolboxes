@@ -52,3 +52,6 @@
 [submodule "Kilosort"]
 	path = Kilosort
 	url = https://github.com/MouseLand/Kilosort.git
+[submodule "npy-matlab"]
+	path = npy-matlab
+	url = https://github.com/kwikteam/npy-matlab.git
