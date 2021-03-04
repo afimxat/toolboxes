@@ -58,3 +58,6 @@
 [submodule "pmtk3"]
 	path = pmtk3
 	url = https://github.com/probml/pmtk3.git
+[submodule "CellExplorer"]
+	path = CellExplorer
+	url = https://github.com/petersenpeter/CellExplorer.git
