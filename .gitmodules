@@ -4,9 +4,6 @@
 [submodule "ShadedErrorBar"]
 	path = ShadedErrorBar
 	url = https://github.com/raacampbell/shadedErrorBar.git
-[submodule "KiloSort2"]
-	path = kilosort
-	url = https://github.com/MouseLand/Kilosort2.git
 [submodule "BuzCode"]
 	path = buzcode
 	url = https://github.com/buzsakilab/buzcode.git
@@ -40,9 +37,6 @@
 [submodule "mat_py_mat"]
 	path = mat_py_mat
 	url = https://github.com/fooof-tools/mat_py_mat.git
-[submodule "Kilosort"]
-	path = Kilosort
-	url = https://github.com/MouseLand/Kilosort.git
 [submodule "npy-matlab"]
 	path = npy-matlab
 	url = https://github.com/kwikteam/npy-matlab.git
