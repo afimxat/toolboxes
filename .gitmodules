@@ -13,9 +13,6 @@
 [submodule "Phy"]
 	path = phy
 	url = https://github.com/cortex-lab/phy.git
-[submodule "phy"]
-	path = phy
-	url = https://github.com/cortex-lab/phy.git
 [submodule "open-ephys"]
 	path = open-ephys
 	url = https://github.com/open-ephys/analysis-tools.git
@@ -31,9 +28,6 @@
 [submodule "matlab-schemer"]
 	path = matlab-schemer
 	url = https://github.com/scottclowe/matlab-schemer.git
-[submodule "buzcode2"]
-	path = buzcode2
-	url = https://github.com/buzsakilab/buzcode.git
 [submodule "buzcode"]
 	path = buzcode
 	url = https://github.com/buzsakilab/buzcode.git
