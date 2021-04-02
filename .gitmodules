@@ -40,9 +40,6 @@
 [submodule "mat_py_mat"]
 	path = mat_py_mat
 	url = https://github.com/fooof-tools/mat_py_mat.git
-[submodule "npy-matlab"]
-	path = npy-matlab
-	url = https://github.com/kwikteam/npy-matlab.git
 [submodule "pmtk3"]
 	path = pmtk3
 	url = https://github.com/probml/pmtk3.git
