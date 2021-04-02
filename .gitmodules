@@ -10,6 +10,9 @@
 [submodule "Phy"]
 	path = phy
 	url = https://github.com/cortex-lab/phy.git
+[submodule "Kilosort"]
+	path = Kilosort
+	url = https://github.com/MouseLand/Kilosort.git
 [submodule "open-ephys"]
 	path = open-ephys
 	url = https://github.com/open-ephys/analysis-tools.git
