@@ -49,3 +49,6 @@
 [submodule "npy-matlab"]
 	path = npy-matlab
 	url = https://github.com/kwikteam/npy-matlab.git
+[submodule "EgocentricBoundaryCells"]
+	path = EgocentricBoundaryCells
+	url = https://github.com/hasselmonians/EgocentricBoundaryCells.git
