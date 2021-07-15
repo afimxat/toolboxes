@@ -52,3 +52,12 @@
 [submodule "EgocentricBoundaryCells"]
 	path = EgocentricBoundaryCells
 	url = https://github.com/hasselmonians/EgocentricBoundaryCells.git
+[submodule "RatBrainAtlasAPI"]
+	path = RatBrainAtlasAPI
+	url = https://github.com/mattgaidica/RatBrainAtlasAPI.git
+[submodule "Violinplot-Matlab"]
+	path = Violinplot-Matlab
+	url = https://github.com/bastibe/Violinplot-Matlab.git
+[submodule "Psychtoolbox-3"]
+	path = Psychtoolbox-3
+	url = https://github.com/Psychtoolbox-3/Psychtoolbox-3.git
