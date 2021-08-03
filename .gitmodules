@@ -49,9 +49,6 @@
 [submodule "EgocentricBoundaryCells"]
 	path = EgocentricBoundaryCells
 	url = https://github.com/hasselmonians/EgocentricBoundaryCells.git
-[submodule "RatBrainAtlasAPI"]
-	path = RatBrainAtlasAPI
-	url = https://github.com/mattgaidica/RatBrainAtlasAPI.git
 [submodule "Violinplot-Matlab"]
 	path = Violinplot-Matlab
 	url = https://github.com/bastibe/Violinplot-Matlab.git
