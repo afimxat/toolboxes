@@ -246,7 +246,7 @@ if get(handles.Vaknin,'Value')
   pot(m1+2,:)=handles.pot(m1,:);
 end;
 
-CSD = -cond*D1(length(pot(:,1)),h)*pot;
+CSD = -cond*D1(length(pot(:,1)),h)*double(pot);
 
 if b1~=0 %filter iCSD (does not change size of CSD matrix)
   [n1,n2]=size(CSD);            
