@@ -2128,7 +2128,7 @@ switch headerformat
     listing    = dir(p);
     filenames  = {listing.name}';
     
-    lfpfile_idx = find(contains(filenames,'.eeg')||contains(filenames,'.lfp'));
+    lfpfile_idx = find(contains(filenames,'.eeg')|contains(filenames,'.lfp'));
     rawfile_idx = find(contains(filenames,'.dat'));
     
     if ~isempty(lfpfile_idx)
