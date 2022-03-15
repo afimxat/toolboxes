@@ -1,15 +1,12 @@
-from phy import IPlugin, connect
-
 import logging
 import os
-import numpy as np
-from phy import IPlugin, connect
 import platform
-
 from pathlib import Path
+import selectors
 from subprocess import Popen
 
-
+import numpy as np
+from phy import IPlugin, connect
 from scipy.cluster.vq import kmeans2, whiten
 
 # logger = logging.getLogger(__name__)
@@ -71,7 +68,7 @@ class Recluster(IPlugin):
                 """Relaunch KlustaKwik on selected clusters."""
                 # Selected clusters.
                 cluster_ids = controller.supervisor.selected
-                spike_ids = controller.selector.select_spikes(cluster_ids)
+                spike_ids=controller.selector.get_spikes_per_cluster(cluster_ids[0])
                 logger.info("Running KlustaKwik on %d spikes.", len(spike_ids))
                 # s = controller.supervisor.clustering.spikes_in_clusters(cluster_ids)
                 data3 = controller.model._load_features().data[spike_ids]
@@ -171,7 +168,7 @@ class Recluster(IPlugin):
                 """Relaunch KlustaKwik on selected clusters."""
                 # Selected clusters.
                 cluster_ids = controller.supervisor.selected
-                spike_ids = controller.selector.select_spikes(cluster_ids)
+                spike_ids=controller.selector.get_spikes_per_cluster(cluster_ids[0])
                 logger.info("Running KlustaKwik on %d spikes.", len(spike_ids))
                 # s = controller.supervisor.clustering.spikes_in_clusters(cluster_ids)
                 data3 = controller.model._load_features().data[spike_ids]
@@ -204,7 +201,7 @@ class Recluster(IPlugin):
                 if platform.system() == "Windows":
                     program = os.path.join(phy_config_dir(), "klustakwik.exe")
                 else:
-                    program = "~/klustakwik/KlustaKwik"
+                    program = "KlustaKwik"
                 cmd = [program, name, str(shank)]
                 cmd += [
                     "-UseDistributional",
@@ -232,14 +229,15 @@ class Recluster(IPlugin):
 
                 cluster_ids = controller.supervisor.selected
 
-                spike_ids = controller.selector.select_spikes(cluster_ids)
+                spike_ids=controller.selector.get_spikes_per_cluster(cluster_ids[0])
                 s = controller.supervisor.clustering.spikes_in_clusters(cluster_ids)
                 data = controller.model._load_features()
                 data3 = data.data[spike_ids]
+                data3=data3[:,:,[0,1]]
                 data2 = np.reshape(
                     data3, (data3.shape[0], data3.shape[1] * data3.shape[2])
                 )
-                whitened = whiten(data2[:, [0, 1, 2]])
+                whitened = whiten(data2[:,0:10])
                 clusters_out, label = kmeans2(whitened, kmeanclusters)
                 controller.supervisor.actions.split(s, label)
                 logger.warning("K means clustering complete")
@@ -292,7 +290,8 @@ class Recluster(IPlugin):
                     return d
 
                 cluster_ids = controller.supervisor.selected
-                spike_ids = controller.selector.select_spikes(cluster_ids)
+                spike_ids=controller.selector.get_spikes_per_cluster(cluster_ids[0])
+
                 s = controller.supervisor.clustering.spikes_in_clusters(cluster_ids)
                 data = controller.model._load_features()
                 data3 = data.data[spike_ids]
