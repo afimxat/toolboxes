@@ -54,7 +54,9 @@ for i = 1:rings
         else
             cl = clrmp(j,:);
         end
-        polsect(a0,a1,r0,r1,cl);
+        ps=polsect(a0,a1,r0,r1,cl);
+        [x,y]=pol2cart((a0+a1)/2,(r0+r1)/2);
+        text(x,y,num2str(numdat(i,j)));
     end
     if i==rings
         legend1 = legend(legtext);
