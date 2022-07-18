@@ -46,3 +46,6 @@
 [submodule "Violinplot-Matlab"]
 	path = Violinplot-Matlab
 	url = https://github.com/bastibe/Violinplot-Matlab.git
+[submodule "open-ephys-matlab-tools"]
+	path = open-ephys-matlab-tools
+	url = https://github.com/open-ephys/open-ephys-matlab-tools.git
