@@ -156,7 +156,7 @@ else
         case 2 % 'mesh'
             h = mesh(ctrs1,ctrs2,F);
         case 3 %'contour'
-            [dummy, h] =contour(ctrs1,ctrs2,F);
+            [dummy, h] =contour(ctrs1,ctrs2,F,'LineWidth',1);
         case 4 %'image'
             nc = 256;
             F = F./max(F(:));

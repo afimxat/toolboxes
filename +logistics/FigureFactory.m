@@ -20,8 +20,8 @@ classdef FigureFactory < Singleton
             else
                 obj.DefaultPath = pwd;
             end
-            obj.figtypes={'-dpng','-depsc'};%
-            obj.ext={'.png','.eps'};%
+            obj.figtypes={'-dpng','-dpdf'};%'-depsc'
+            obj.ext={'.png','.pdf'};%
             obj.resolution='-r600';
         end
     end
@@ -47,11 +47,11 @@ classdef FigureFactory < Singleton
                 mkdir(filepath)
             end
             f=gcf;
-            f.Renderer='painters';
+            f.Renderer='vector';
             folderfile=fullfile(filepath,matlab.lang.makeValidName(name));
             for ifig=1:numel(obj.figtypes)
                 figtype=obj.figtypes{ifig};
-                print([folderfile obj.ext{ifig}],figtype,obj.resolution)
+                print([folderfile obj.ext{ifig}],figtype,obj.resolution,'-bestfit' )
             end
         end
     end
