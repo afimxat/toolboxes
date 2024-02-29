@@ -47,11 +47,19 @@ classdef FigureFactory < Singleton
                 mkdir(filepath)
             end
             f=gcf;
-            f.Renderer='vector';
+            try
+                f.Renderer='vector';
+            catch
+                f.Renderer='opengl';
+            end
             folderfile=fullfile(filepath,matlab.lang.makeValidName(name));
             for ifig=1:numel(obj.figtypes)
                 figtype=obj.figtypes{ifig};
-                print([folderfile obj.ext{ifig}],figtype,obj.resolution,'-bestfit' )
+                try
+                    print([folderfile obj.ext{ifig}],figtype,obj.resolution,'-bestfit' )
+                catch                
+                    print([folderfile obj.ext{ifig}],figtype,obj.resolution )
+                end
             end
         end
     end
