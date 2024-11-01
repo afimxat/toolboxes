@@ -76,7 +76,7 @@ classdef FigureFactory < Singleton
             catch
                 f.Renderer='opengl';
             end
-            folderfile=fullfile(filepath,name);
+            folderfile=fullfile(filepath,matlab.lang.makeValidName(name));
             for ifig=1:numel(obj.ext)
                     exportgraphics(f,strcat(folderfile, obj.ext{ifig}), ...
                         ContentType="vector",Resolution=obj.resolution ...
